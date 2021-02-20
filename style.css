@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-size: 0.9375rem;
   font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
   flex-flow: wrap column;
   width: 90%;
   margin: 4.375rem auto;
+  overflow-x: hidden;
 }
 
 .topic-heading {
@@ -24,7 +26,7 @@ body {
   font-weight: 200;
   color: hsl(229, 6%, 66%);
 }
-.topic-heading__contributor-name {
+.topic-contributor-name {
   font-size: 1.5rem;
   color: hsl(234, 12%, 34%);
   font-weight: 600;
@@ -36,12 +38,12 @@ body {
 
 .card {
   width: calc(100vw - 30%);
-  padding: 30px;
+  padding: 1.875rem;
   text-align: left;
   border-radius: 6px;
   background-color: #fff;
-  margin: 15px auto;
-  box-shadow: 0px 15px 30px -14px rgba(0, 0, 0, 0.35);
+  margin: 0.9375rem auto;
+  box-shadow: 0px 15px 20px -14px rgba(0, 0, 0, 0.25);
 }
 .card-heading {
   font-size: 1.4rem;
@@ -72,4 +74,37 @@ body {
 }
 .card-4 {
   border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1200px) {
+  .des {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  .container {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .heading {
+    width: 50%;
+    align-self: center;
+    margin-bottom: 3%;
+  }
+  .card {
+    margin-top: 0;
+    width: 26%;
+    height: 11.875rem;
+  }
+  .card-4 {
+    order: 1;
+  }
+  .card-3 {
+    order: 2;
+    margin-top: 0.7%;
+  }
+  .card-1,
+  .card-4 {
+    position: relative;
+    top: 9.375rem;
+  }
 }
