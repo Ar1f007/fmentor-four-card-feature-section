@@ -77,9 +77,10 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .des {
+  .card-container {
     display: flex;
     flex-flow: wrap row;
+    max-width: 90rem;
   }
   .container {
     margin-top: 2.5rem;
