@@ -81,6 +81,7 @@ body {
     display: flex;
     flex-flow: wrap row;
     max-width: 90rem;
+    margin: 0 auto;
   }
   .container {
     margin-top: 2.5rem;
